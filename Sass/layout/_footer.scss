@@ -1,0 +1,16 @@
+@use "../global" as *;
+
+.l-footer {
+  position: relative;
+  background-color: black;
+  height: 500px;
+  color: $color1;
+  p {
+    writing-mode: vertical-rl;
+    position: absolute;
+    height: 400px;
+    right: 13%;
+    top: 72px;
+    @include f_around(12, regular, 20, 20);
+  }
+}

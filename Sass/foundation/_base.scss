@@ -1,0 +1,28 @@
+@use "../global" as *;
+
+body {
+  font-family: $font-family;
+  background-color: $background;
+  list-style: none;
+  a {
+    color: inherit;
+  }
+  h1 {
+    @include f_around(30, regular, 24, 230);
+  }
+  li {
+    @include f_around(14, regular, 24, 0);
+
+    p {
+      @include f_around(16, regular, 24, 0);
+      margin: 0 0 0 22px;
+    }
+    dt,
+    dd {
+      @include f_around(14, regular, 28, 0);
+    }
+    time {
+      @include f_around(13, regular, 24, 0);
+    }
+  }
+}

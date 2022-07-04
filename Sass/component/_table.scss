@@ -1,0 +1,37 @@
+@use "../global" as *;
+
+.c-table {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 42px;
+  @include tab {
+    margin-top: 27px;
+  }
+  dt {
+    width: 15%;
+    margin-top: 0px;
+    @include tab {
+      width: 100%;
+      padding-top: 2px;
+    }
+  }
+  dd {
+    width: 80%;
+    margin-top: 0px;
+    @include tab {
+      width: 100%;
+      margin-left: 15px;
+    }
+    &::nth-child(2) {
+      margin-bottom: 10px;
+    }
+  }
+  .right {
+    margin-left: 15%;
+    @include tab {
+      margin-left: 15px;
+    }
+  }
+}

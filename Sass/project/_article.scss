@@ -1,0 +1,22 @@
+@use "../global" as *;
+
+.p-article {
+  &__picture {
+    width: 62%;
+    object-fit: cover;
+    margin-right: 40px;
+    margin-top: 94px;
+  }
+  &__section {
+    &__text,
+    &__title {
+      margin-right: 15px;
+      writing-mode: vertical-rl;
+      &-2 {
+        writing-mode: vertical-rl;
+        margin-right: 28px;
+        margin-top: 5px;
+      }
+    }
+  }
+}

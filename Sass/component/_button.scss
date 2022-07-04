@@ -1,0 +1,14 @@
+@use "../global" as *;
+
+.c-header-button {
+  position: absolute;
+  writing-mode: vertical-rl;
+  height: 160px;
+  background-color: #333333;
+  color: white;
+  top: 295px;
+  left: 2%;
+  padding: 49px 16px;
+  border: solid 1px white;
+  margin: 17px;
+}
