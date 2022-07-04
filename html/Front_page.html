@@ -18,11 +18,10 @@
   </head>
   <body>
     <header class="l-header">
-      <img
-        class="l-header__picture"
-        src="../画像/img/mainvisual-pc.jpg"
-        alt="mainvisual-pc"
-      />
+      <picture class="l-header__picture">
+        <source srcset="../画像/img/mainvisual-pc.jpg" media="(min-width: 768px)" /><!-- ○○px以上で表示する画像 -->
+        <img src="../画像/img/mainvisual-sp.jpg"alt="mainvisual"/><!-- それ以外の場合に表示する画像 -->
+      </picture>
       <nav class="list">
         <img class="l-header_logo" src="../画像/img/logo.svg" alt="logo" />
         <ul class="list__menu">
