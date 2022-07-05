@@ -9,24 +9,44 @@
     max-width: 1024px;
     margin: 0 0 0 auto;
     margin-top: 280px;
-    @include sp {
+    @include tab {
       flex-direction: column;
       padding-left: 0;
-      margin-top: 88px;
-      margin-left: 16px;
+      margin-top: 176px;
+
+      max-width: 100%;
+      h1 {
+        line-height: 0px;
+        letter-spacing: 0em;
+      }
     }
     &__topic {
       margin-top: 77px;
       margin-right: 105px;
       border-right: 1px solid $color2;
-      @include sp {
+      @include tab {
         flex-direction: column;
-        margin-top: 41px;
+        margin-top: 10px;
+        margin-right: 46px;
+        p {
+          margin-left: 5px;
+          @include f_around(12, regular, 24, 400);
+        }
+      }
+
+      :nth-child(4),
+      :nth-child(5) {
+        @include tab {
+          display: none;
+        }
       }
 
       li {
         padding: 20px 0;
         margin: 0 20px;
+        @include tab {
+          margin: 0px;
+        }
         border-left: 1px solid #141414;
         time {
           margin-right: 5px;
@@ -38,6 +58,9 @@
     display: flex;
     flex-direction: row-reverse;
     margin-top: 180px;
+    @include tab {
+      margin-top: 72px;
+    }
     position: relative;
   }
   &__topic {
@@ -45,5 +68,8 @@
     position: relative;
     margin-top: 192px;
     margin-left: 25px;
+    @include tab {
+      margin-top: 84px;
+    }
   }
 }

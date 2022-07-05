@@ -3,4 +3,7 @@
 .c-map {
   width: 100%;
   margin-top: 200px;
+  @include tab {
+    margin-top: 100px;
+  }
 }

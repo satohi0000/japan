@@ -26,8 +26,9 @@
     position: absolute;
     top: 63px;
     right: 4%;
-  }
-  @include sp {
-    margin-top: 16px;
+    @include tab {
+      padding-right: 6px;
+      top: 20px;
+    }
   }
 }

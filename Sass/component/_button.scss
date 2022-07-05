@@ -3,12 +3,21 @@
 .c-header-button {
   position: absolute;
   writing-mode: vertical-rl;
-  height: 160px;
+
   background-color: #333333;
   color: white;
-  top: 295px;
+  top: 293px;
+  @include tab {
+    top: 300px;
+  }
   left: 2%;
-  padding: 49px 16px;
-  border: solid 1px white;
   margin: 17px;
+
+  li {
+    border: 1px solid white;
+    height: 238px;
+    margin: 10px 10px;
+    text-align: center;
+    @include f_around(16, regular, 40, 10);
+  }
 }

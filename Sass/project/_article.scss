@@ -6,6 +6,12 @@
     object-fit: cover;
     margin-right: 40px;
     margin-top: 94px;
+    @include tab {
+      width: 80%;
+      object-fit: cover;
+      margin-right: 11px;
+      margin-top: 73px;
+    }
   }
   &__section {
     &__text,
@@ -14,8 +20,23 @@
       writing-mode: vertical-rl;
       &-2 {
         writing-mode: vertical-rl;
-        margin-right: 28px;
+        margin-right: 46px;
         margin-top: 5px;
+        @include tab {
+          font-size: 20px;
+          margin-right: 14px;
+        }
+      }
+    }
+    &__text {
+      &-2 {
+        display: none;
+      }
+    }
+    &__title {
+      @include tab {
+        margin-right: 18px;
+        margin-top: 4px;
       }
     }
   }
