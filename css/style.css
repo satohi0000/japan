@@ -309,19 +309,27 @@ select {
   line-height: 1.6666666667;
   letter-spacing: 0.02em;
 }
+.l-footer__sentence p {
+  right: 300px;
+}
 .l-footer__logo {
   width: 38px;
   line-height: 93px;
   padding-right: 30px;
   position: absolute;
   top: 63px;
-  right: 4%;
+  right: 20px;
 }
 @media (max-width: 768px) {
   .l-footer__logo {
     padding-right: 6px;
     top: 50px;
   }
+}
+.l-footer__menu__logo {
+  text-align: right;
+  margin-right: 20px;
+  padding-top: 20px;
 }
 
 .l-header {
@@ -346,10 +354,10 @@ select {
 .l-header_logo {
   width: 38px;
   line-height: 93px;
-  padding-right: 30px;
+  padding-right: 20px;
   position: absolute;
   top: 63px;
-  right: 4%;
+  right: 110px;
 }
 @media (max-width: 768px) {
   .l-header_logo {
@@ -590,7 +598,7 @@ select {
 }
 .list__menu {
   top: 60px;
-  right: 12%;
+  right: 20%;
   height: 150px;
   position: absolute;
 }

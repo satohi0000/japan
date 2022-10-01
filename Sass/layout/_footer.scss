@@ -13,6 +13,11 @@
     top: 48px;
     @include f_around(12, regular, 20, 20);
   }
+  &__sentence {
+    p {
+      right: 300px;
+    }
+  }
 
   &__logo {
     width: 38px;
@@ -20,10 +25,17 @@
     padding-right: 30px;
     position: absolute;
     top: 63px;
-    right: 4%;
+    right: 20px;
     @include tab {
       padding-right: 6px;
       top: 50px;
+    }
+  }
+  &__menu {
+    &__logo {
+      text-align: right;
+      margin-right: 20px;
+      padding-top: 20px;
     }
   }
 }
